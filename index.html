@@ -7,9 +7,80 @@
   <link rel="stylesheet" href="./reset.css"> 
   <link rel="stylesheet" href="./style.css">
   <script src="./index.js" async></script>
-  <title>Document</title>
+  <link rel="shortcut icon" href="./moneyPlant.png" type="image/x-icon/">
+  <title>Banco Money Plant</title>
 </head>
 <body>
-  
+  <header>
+    <section class="cabecalho">
+      <h1><img src="./moneyPlant.png" alt="logo"></h1>
+      <h1 class="titulo" id="nome">Money Plant</h1>
+      <nav>
+        <ul class="lista-navegação">
+          <li class="itens"><a href="">Menu</a></li>
+          <li class="itens"><a href="">Acesse sua conta</a></li>
+          <li class="itens"><a href="">Cadastre-se</a></li>
+          <li class="itens">
+            <label class="rotulo">Pesquisa:</label>
+            <input type="text" name="pesquisa" placeholder="O que você procura?">
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+  <main class="conteudo">
+        <section class="informativos">
+        <div class="materia">
+          <h2 class="titulo-materia">Dicas para começar a poupar</h2>
+          <img class="ilustra-materia" src="./img/conta-banco (1).jpg" alt="foto" />
+          <p class="artigo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, tenetur consequatur sed blanditiis velit ex, nam corporis saepe minus, necessitatibus quo! Accusantium laboriosam quod ipsam eius voluptates ipsum. Nam, at!</p>
+          <a class="link-materia" href="https://economia.uol.com.br/noticias/">Saiba mais</a>
+        </div>
+        <div class="materia">
+          <h2 class="titulo-materia"> Melhores opções de investimentos </h2>
+          <img class="ilustra-materia" src="./img/conta-banco (2).jpg" alt="foto" />
+          <p  class="artigo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, tenetur consequatur sed blanditiis velit ex, nam corporis saepe minus, necessitatibus quo! Accusantium laboriosam quod ipsam eius voluptates ipsum. Nam, at!</p>
+          <a class="link-materia" href="https://economia.uol.com.br/noticias/">Saiba mais</a>
+        </div>
+        </section>
+
+        <section>
+          <div class="formulario-cadastro">
+            <h1 class="titulo-form"> Formulário de Cadastro </h1>
+            <p class="texto-form">Preencha corretamente o formulário abaixo para se tornar um de nossos correntistas</p>
+            <fieldset class="secao-formulario">
+              <h3 class="subtitulo-form">Cadastro</h3>
+              <form class="formulario-novos-clientes" id="formulário-novo-cliente" >
+
+                <label class="rotulo">Nome completo:</label>
+                <input required class="entrada" type="text"  id="textNome" placeholder="Digite seu nome"><br><br>
+
+                <label class="rotulo">CPF:</label>
+                <input required class="entrada" type="number"  id="cpf" placeholder="000.000.000-00"><br><br>
+
+                <label class="rotulo">Celular:</label>
+                <input required class="entrada" type="tel"  id="celular" placeholder="(00) 00000-0000"><br><br>
+
+                <label class="rotulo">Senha:</label>
+                <input required class="entrada" type="password"  id="senha" placeholder="Digite sua senha"><br><br>
+
+                <label class="rotulo">Confirme a senha:</label>
+                <input required class="entrada" type="password"  id="senha" placeholder="Digite sua senha"><br><br>
+                
+                <div class="form-group-button">
+                <button class="button" type="reset" id="button-reset">Limpar</button>
+                <button class="button" type="submit" id="button-submit">Enviar</button>
+                </div>
+              </form>
+            </fieldset>
+          </div>
+        </section>
+  </main>
+  <footer class="rodapé">
+    <p>Money Plant </p>
+    <p>© Money Plant S/A - CNPJ 00.000.000/0001-92 SAUN QD 5 LT B, Asa Norte, Guaramirim-SC, Brasil - CEP 89270-000</p>
+    <p>Janeiro 2023</p>
+  </footer>
 </body>
+
 </html>
