@@ -50,10 +50,11 @@
             <p class="texto-form">Preencha corretamente o formulário abaixo para se tornar um de nossos correntistas</p>
             <fieldset class="secao-formulario">
               <h3 class="subtitulo-form">Cadastro</h3>
-              <form class="formulario-novos-clientes" id="formulário-novo-cliente" >
+              
+              <form class="formulario-novos-clientes" id="formulario" >
 
                 <label class="rotulo">Nome completo:</label>
-                <input required class="entrada" type="text"  id="textNome" placeholder="Digite seu nome"><br><br>
+                <input required nome class="entrada" type="text"  id="nome" placeholder="Digite seu nome"><br><br>
 
                 <label class="rotulo">CPF:</label>
                 <input required class="entrada" type="number"  id="cpf" placeholder="000.000.000-00"><br><br>
@@ -65,11 +66,11 @@
                 <input required class="entrada" type="password"  id="senha" placeholder="Digite sua senha"><br><br>
 
                 <label class="rotulo">Confirme a senha:</label>
-                <input required class="entrada" type="password"  id="senha" placeholder="Digite sua senha"><br><br>
+                <input required class="entrada" type="password"  id="confirma-senha" placeholder="Digite sua senha"><br><br>
                 
                 <div class="form-group-button">
-                <button class="button" type="reset" id="button-reset">Limpar</button>
-                <button class="button" type="submit" id="button-submit">Enviar</button>
+                <button class="button" type="reset" id="buttonReset">Limpar</button>
+                <button class="button" type="submit" id="buttonSubmit">Enviar</button>
                 </div>
               </form>
             </fieldset>
