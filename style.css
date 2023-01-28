@@ -11,8 +11,6 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 20px 40px;
-  gap: 20px;
   justify-items: auto;
 }
 
@@ -26,28 +24,19 @@ header {
   font-size: 5vw;
 }
 
-h1 :hover {
-  color: beige;
-  text-transform: uppercase;
-}
-
 nav .lista-navegação {
   position: absolute;
-  right: 10px;
+  margin: 15px;
 }
 
-nav li {
+.lista-navegacao li{
   display: inline-flex;
   margin-left: 15px;
   font-weight: bold;
+  font-size: 1.5vw;
   text-decoration: none;
   color: black;
   text-transform: uppercase;
-}
-
-.itens :hover {
-  text-decoration: overline;
-  color: rgb(11, 11, 177);
 }
 
 body {
@@ -57,10 +46,9 @@ body {
 
 main {
   display: flex;
-  flex-direction: row;
+  flex: 1;
   align-items: flex-start;
   margin: 20px 20px;
-  padding: 10px 20px;
   gap: 20px;
 }
 
@@ -69,39 +57,53 @@ main {
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
-
+  width: 30vw;
+  background-color: black;
+  border: 2px solid rgb(239, 217, 22);
 }
 
 .materia {
   margin: 2px;
   padding: 15px;
-  border: 2px solid black;
-  border-radius: 10%;
-  justify-content: flex-end;
   align-items: center;
   text-align: center;
+  color: wheat;
 }
 
 .ilustra-materia {
-  width: 200px;
+  max-width: 22vw;
 }
 
 .artigo {
   text-align: center;
+  font-size: 15px;
+  color: wheat;
+  margin: 20px;
 }
 
 .titulo-materia {
-  font-size: 35px;
+  font-size: 25px;
   font-weight: bold;
   margin: 5px;
 }
 
-.subtitulo :hover {
-  font-size: 45px;
+.link-materia{
+  border: 3px solid rgb(239, 217, 22);
+  background-color: rgb(247, 235, 119);
+  text-align: center;
+  padding: 5px;
+  border-radius: 10%;
+  font-weight: bold;
+  margin: 15px;
+  text-decoration: none;
 }
 
 .formulario-cadastro{
   margin: 10px;
+  border: 2px solid rgb(239, 217, 22);
+  background-color: black;
+  width: 30vw;
+  padding: 10px;
 }
 
 .titulo-form{
@@ -109,9 +111,11 @@ main {
   font-weight: bold;
   font-size: 22px;
   margin: 3px;
+  color: wheat;
 }
 
 .texto-form{
+  color: wheat;
   font-style: italic;
   font-size: 16px;
   margin: 0px 3px 2px 2px;
@@ -152,11 +156,23 @@ main {
 }
 form .button{
   border: 3px solid rgb(239, 217, 22);
+  background-color: rgb(247, 235, 119);
   text-align: center;
   padding: 5px;
   border-radius: 10%;
   font-weight: bold;
   margin-left: 25px;
+}
+
+input {
+  background-color: whitesmoke;
+  border-color: rgb(239, 217, 22);
+  width: 25vw;
+}
+
+.entrada{
+  background-color: whitesmoke;
+  border-color: rgb(239, 217, 22);
 }
 
 footer {
@@ -166,4 +182,18 @@ footer {
   font-weight: bold;
   text-align: center;
   padding: 10px 15px;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: black;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(239, 217, 22);
+  border-radius: 20px;
+  border: 3px solid black;
 }

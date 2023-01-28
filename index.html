@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./style.css">
   <script src="./index.js" async></script>
   <link rel="shortcut icon" href="./moneyPlant.png" type="image/x-icon/">
-  <title>Banco Money Plant | home </title>
+  <title>Banco Money Plant | Fazendo seu dinheiro crescer </title>
 </head>
 <body>
   <header>
@@ -16,12 +16,12 @@
       <h1><img src="./moneyPlant.png" alt="logo"></h1>
       <h1 class="titulo" id="nome">Money Plant</h1>
       <nav>
-        <ul class="lista-navegação">
-          <li class="itens"><a href="./index.html">Menu</a></li>
-          <li class="itens"><a href="./index.html">Acesse sua conta</a></li>
-          <li class="itens"><a href="./index.html">Cadastre-se</a></li>
+        <ul class="lista-navegacao">
+          <li class="itens">Menu</li>
+          <li class="itens">Acesse sua conta</li>
+          <li class="itens">Cadastre-se</li>
           <li class="itens">
-            <label class="rotulo">Pesquisa:</label>
+            <label class="itens">Pesquisa:</label>
             <input type="text" name="pesquisa" placeholder="O que você procura?">
           </li>
         </ul>
@@ -34,7 +34,7 @@
           <h2 class="titulo-materia">Dicas para começar a poupar</h2>
           <img class="ilustra-materia" src="./img/conta-banco (1).jpg" alt="foto" />
           <p class="artigo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, tenetur consequatur sed blanditiis velit ex, nam corporis saepe minus, necessitatibus quo! Accusantium laboriosam quod ipsam eius voluptates ipsum. Nam, at!</p>
-          <a class="link-materia" href="https://economia.uol.com.br/noticias/">Saiba mais</a>
+          <a class="link-materia" type="button" href="https://economia.uol.com.br/noticias/">Saiba mais</a>
         </div>
         <div class="materia">
           <h2 class="titulo-materia"> Melhores opções de investimentos </h2>
@@ -45,28 +45,28 @@
         </section>
 
         <section>
-          <div class="formulario-cadastro">
-            <h1 class="titulo-form"> Formulário de Cadastro </h1>
-            <p class="texto-form">Preencha corretamente o formulário abaixo para se tornar um de nossos correntistas</p>
+          <div class="formulario-cadastro" id="formCadastro">
+            <h1 class="titulo-form" id="formTitulo"> Formulário de Cadastro </h1>
+            <p class="texto-form" id="textForm">Preencha corretamente o formulário abaixo para se tornar um de nossos correntistas</p>
             <fieldset class="secao-formulario">
               <h3 class="subtitulo-form">Cadastro</h3>
               
               <form class="formulario-novos-clientes" id="formulario" >
 
-                <label class="rotulo">Nome completo:</label>
+                <label class="rotulo" for="nome">Nome completo:</label>
                 <input required nome class="entrada" type="text"  id="nome" placeholder="Digite seu nome"><br><br>
 
-                <label class="rotulo">CPF:</label>
-                <input required class="entrada" type="number"  id="cpf" placeholder="000.000.000-00"><br><br>
+                <label class="rotulo" for="cpf">CPF:</label>
+                <input required class="entrada" type="text"  id="cpf" placeholder="000.000.000-00"><br><br>
 
-                <label class="rotulo">Celular:</label>
-                <input required class="entrada" type="tel"  id="celular" placeholder="(00) 00000-0000"><br><br>
+                <label class="rotulo" for="celular">Celular:</label>
+                <input required class="entrada" type="text"  id="celular" placeholder="(00) 00000-0000"><br><br>
 
-                <label class="rotulo">Senha:</label>
+                <label class="rotulo" for="senha">Senha:</label>
                 <input required class="entrada" type="password"  id="senha" placeholder="Digite sua senha"><br><br>
 
-                <label class="rotulo">Confirme a senha:</label>
-                <input required class="entrada" type="password"  id="confirma-senha" placeholder="Digite sua senha"><br><br>
+                <label class="rotulo" for="confirmaSenha">Confirme a senha:</label>
+                <input required class="entrada" type="password"  id="confirmaSenha" placeholder="Digite a confimação da sua senha"><br><br>
                 
                 <div class="form-group-button">
                 <button class="button" type="reset" id="buttonReset">Limpar</button>
@@ -76,11 +76,46 @@
             </fieldset>
           </div>
         </section>
+        <section>
+          <div class="formulario-cadastro" id="formCadastro">
+            <h1 class="titulo-form" id="formAcessoTitulo"> Acesse sua conta </h1>
+            <p class="texto-form" id="textAcessoForm"></p>
+              <fieldset class="secao-formulario">
+                <form class="formConta" id="formAcessoConta">
+                  <div>
+                    <label class="rotulo" for="conta">Conta</label>
+                    <input required class="entrada" type="number" id="conta" placeholder="000000000000"><br><br>
+                  </div>
+                  <div>
+                    <label class="rotulo" for="operacao">Operação</label>
+                    <select required class="entrada" id="operacao">
+                      <option value="saque">Saque</option>
+                      <option value="deposito">Depósito</option>
+                      <option value="saldo">Consulta saldo</option>
+                    </select><br><br>
+                  </div>
+                  <div>
+                    <label class="rotulo" for="valor">Valor:</label>
+                    <input required disabled id="valor" type="number" placeholder="Digite o valor" /><br><br>
+                  </div>
+                  <div>
+                    <label class="rotulo" for="senhaAcesso">Senha:</label>
+                    <input required id="senhaAcesso" type="password" placeholder="Digite a senha" /><br><br>
+                  </div>
+                  <div class="form-group-button">
+                    <button class="button" type="reset" id="buttonReset2">Limpar</button>
+                    <button class="button" type="submit" id="buttonSubmit2">Confirmar</button>
+                    </div>
+                </form>
+                </div>
+          </fieldset>
+        </section>
   </main>
-  <footer class="rodapé">
+  <footer class="rodape">
     <p>Money Plant </p>
     <p>© Money Plant S/A - CNPJ 00.000.000/0001-92 SAUN QD 5 LT B, Asa Norte, Guaramirim-SC, Brasil - CEP 89270-000</p>
     <p>Janeiro 2023</p>
+    <p>By Beatriz Ceschini</p>
   </footer>
 </body>
 
